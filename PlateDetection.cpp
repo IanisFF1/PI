@@ -155,9 +155,9 @@ Mat detectEdgesCannyLite(Mat source, int lowThreshold, int highThreshold) {
             if (magnitude >= neighbor1 && magnitude >= neighbor2) {
                 // 3. Aplicăm prag
                 if (magnitude >= highThreshold)
-                    edges.at<uchar>(i, j) = 255;  // muchie clară
+                    edges.at<uchar>(i, j) = 255;
                 else if (magnitude >= lowThreshold)
-                    edges.at<uchar>(i, j) = 100;  // muchie slabă
+                    edges.at<uchar>(i, j) = 100;
             }
         }
     }
@@ -166,7 +166,7 @@ Mat detectEdgesCannyLite(Mat source, int lowThreshold, int highThreshold) {
     for (int i = 1; i < edges.rows - 1; ++i) {
         for (int j = 1; j < edges.cols - 1; ++j) {
             if (edges.at<uchar>(i, j) == 100) {
-                // Verificăm cei 8 vecini
+
                 bool connectedToStrongEdge = false;
                 for (int di = -1; di <= 1; ++di) {
                     for (int dj = -1; dj <= 1; ++dj) {
@@ -180,9 +180,9 @@ Mat detectEdgesCannyLite(Mat source, int lowThreshold, int highThreshold) {
                 }
 
                 if (connectedToStrongEdge)
-                    edges.at<uchar>(i, j) = 255;  // devine muchie puternică
+                    edges.at<uchar>(i, j) = 255;
                 else
-                    edges.at<uchar>(i, j) = 0;    // eliminat
+                    edges.at<uchar>(i, j) = 0;
             }
         }
     }
@@ -262,7 +262,7 @@ vector<Point> detectBestPlate(const Mat& image, const Mat &edgeImage) {
             continue;
 
         float idealAspect = 4.0f;
-        float shapeScore = 1.0f - std::abs(aspectRatio - idealAspect) / idealAspect;
+        float shapeScore = 1.0f - abs(aspectRatio - idealAspect) / idealAspect;
         float score = area * shapeScore;
 
         if (score > maxScore) {
@@ -276,7 +276,7 @@ vector<Point> detectBestPlate(const Mat& image, const Mat &edgeImage) {
 
 void drawPlateContour(Mat image, const vector<Point> &plateContour) {
     if (!plateContour.empty()) {
-        for (size_t i = 0; i < plateContour.size(); ++i) {
+        for (int i = 0; i < plateContour.size(); ++i) {
             line(image, plateContour[i], plateContour[(i + 1) % plateContour.size()], Scalar(0, 255, 255), 2);
         }
         cout << "Placuta incadrata cu succes.\n";

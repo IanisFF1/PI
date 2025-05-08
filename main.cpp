@@ -7,7 +7,7 @@ using namespace cv;
 
 int main() {
 
-    Mat image = imread("C:\\Users\\IanisFatFrumos\\Desktop\\AN 3\\Laboratoare\\PI\\Proiect1\\images\\masina.bmp");
+    Mat image = imread("C:\\Users\\IanisFatFrumos\\Desktop\\AN 3\\Laboratoare\\PI\\Proiect1\\images\\masina5.bmp");
     imshow("Original image", image);
     moveWindow("Original image", image.rows/2, image.cols/2);
 
