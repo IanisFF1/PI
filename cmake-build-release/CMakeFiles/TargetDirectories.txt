@@ -1,0 +1,3 @@
+C:/Users/IanisFatFrumos/Desktop/AN 3/Laboratoare/PI/Proiect1/cmake-build-release/CMakeFiles/Proiect1.dir
+C:/Users/IanisFatFrumos/Desktop/AN 3/Laboratoare/PI/Proiect1/cmake-build-release/CMakeFiles/edit_cache.dir
+C:/Users/IanisFatFrumos/Desktop/AN 3/Laboratoare/PI/Proiect1/cmake-build-release/CMakeFiles/rebuild_cache.dir

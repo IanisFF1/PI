@@ -1,0 +1,5 @@
+# ninja log v6
+2	104	7683869521819220	build.ninja	7b1e441f90d36b8a
+3	1312	7683398339949687	CMakeFiles/Proiect1.dir/main.cpp.obj	31119ebd9e47ecd0
+1313	1461	7683398353045743	Proiect1.exe	885e3760adf181c7
+16	1616	7683386684069452	CMakeFiles/Proiect1.dir/PlateDetection.cpp.obj	67e28235182c357f
