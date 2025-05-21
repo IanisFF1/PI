@@ -15,7 +15,8 @@
 					"source" : ".",
 					"targetIndexes" : 
 					[
-						0
+						0,
+						1
 					]
 				}
 			],
@@ -30,7 +31,8 @@
 					"name" : "Proiect1",
 					"targetIndexes" : 
 					[
-						0
+						0,
+						1
 					]
 				}
 			],
@@ -38,8 +40,15 @@
 			[
 				{
 					"directoryIndex" : 0,
+					"id" : "BatchTest::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-BatchTest-Release-f30dee44626348831ee8.json",
+					"name" : "BatchTest",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
 					"id" : "Proiect1::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-Proiect1-Release-3b81923c7bfbb1ce2cd1.json",
+					"jsonFile" : "target-Proiect1-Release-180016b22fe4b4eaf26e.json",
 					"name" : "Proiect1",
 					"projectIndex" : 0
 				}

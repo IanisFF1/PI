@@ -57,8 +57,6 @@ Mat applyThreshold(Mat source, int thresholdValue) {
     return binary;
 }
 
-
-
 Mat applyGaussianBlur(Mat source) {
 
     Mat blurred = source.clone();
@@ -88,8 +86,6 @@ Mat applyGaussianBlur(Mat source) {
     return blurred;
 }
 
-
-
 Mat detectEdgesCannyLite(Mat source, int lowThreshold, int highThreshold) {
     Mat edges = Mat::zeros(source.size(), CV_8UC1);
 
@@ -107,7 +103,7 @@ Mat detectEdgesCannyLite(Mat source, int lowThreshold, int highThreshold) {
     Mat gradientMagnitude(source.rows, source.cols, CV_32FC1);
     Mat gradientDirection(source.rows, source.cols, CV_32FC1);
 
-    // 1. Calcul Gx, Gy, magnitudine și unghi
+
     for (int i = 1; i < source.rows - 1; ++i) {
         for (int j = 1; j < source.cols - 1; ++j) {
             float sumX = 0, sumY = 0;
@@ -120,8 +116,8 @@ Mat detectEdgesCannyLite(Mat source, int lowThreshold, int highThreshold) {
                 }
             }
 
-            float magnitude = std::sqrt(sumX * sumX + sumY * sumY);
-            float angle = std::atan2(sumY, sumX) * 180.0 / CV_PI;
+            float magnitude = sqrt(sumX * sumX + sumY * sumY);
+            float angle = atan2(sumY, sumX) * 180.0 / CV_PI;
             if (angle < 0) angle += 180;
 
             gradientMagnitude.at<float>(i, j) = magnitude;
@@ -129,7 +125,7 @@ Mat detectEdgesCannyLite(Mat source, int lowThreshold, int highThreshold) {
         }
     }
 
-    // 2. Non-Maximum Suppression
+
     for (int i = 1; i < source.rows - 1; ++i) {
         for (int j = 1; j < source.cols - 1; ++j) {
             float angle = gradientDirection.at<float>(i, j);
@@ -137,7 +133,6 @@ Mat detectEdgesCannyLite(Mat source, int lowThreshold, int highThreshold) {
 
             float neighbor1 = 0, neighbor2 = 0;
 
-            // Determinăm vecinii în funcție de direcție
             if ((angle >= 0 && angle < 22.5) || (angle >= 157.5 && angle <= 180)) {
                 neighbor1 = gradientMagnitude.at<float>(i, j - 1);
                 neighbor2 = gradientMagnitude.at<float>(i, j + 1);
@@ -153,7 +148,6 @@ Mat detectEdgesCannyLite(Mat source, int lowThreshold, int highThreshold) {
             }
 
             if (magnitude >= neighbor1 && magnitude >= neighbor2) {
-                // 3. Aplicăm prag
                 if (magnitude >= highThreshold)
                     edges.at<uchar>(i, j) = 255;
                 else if (magnitude >= lowThreshold)
@@ -162,7 +156,7 @@ Mat detectEdgesCannyLite(Mat source, int lowThreshold, int highThreshold) {
         }
     }
 
-    // 4. Hysteresis thresholding
+
     for (int i = 1; i < edges.rows - 1; ++i) {
         for (int j = 1; j < edges.cols - 1; ++j) {
             if (edges.at<uchar>(i, j) == 100) {
@@ -240,6 +234,7 @@ vector<Point> detectBestPlate(const Mat& image, const Mat &edgeImage) {
 
     int imageCenterX = image.cols / 2;
     int maxOffset = image.cols / 4;
+
 
     for (const auto& contour : contours) {
         double area = computeContourArea(contour);

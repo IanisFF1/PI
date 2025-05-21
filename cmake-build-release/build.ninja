@@ -51,7 +51,7 @@ build cmake_object_order_depends_target_Proiect1: phony || .
 
 build CMakeFiles\Proiect1.dir\main.cpp.obj: CXX_COMPILER__Proiect1_unscanned_Release C$:\Users\IanisFatFrumos\Desktop\AN$ 3\Laboratoare\PI\Proiect1\main.cpp || cmake_object_order_depends_target_Proiect1
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MD /O2 /Ob2 /DNDEBUG -std:c++17
-  INCLUDES = -external:IC:\Users\IanisFatFrumos\Downloads\opencv\build\include -external:W0
+  INCLUDES = -IC:\Users\IanisFatFrumos\Downloads\opencv\build\include
   OBJECT_DIR = CMakeFiles\Proiect1.dir
   OBJECT_FILE_DIR = CMakeFiles\Proiect1.dir
   TARGET_COMPILE_PDB = CMakeFiles\Proiect1.dir\
@@ -59,7 +59,15 @@ build CMakeFiles\Proiect1.dir\main.cpp.obj: CXX_COMPILER__Proiect1_unscanned_Rel
 
 build CMakeFiles\Proiect1.dir\PlateDetection.cpp.obj: CXX_COMPILER__Proiect1_unscanned_Release C$:\Users\IanisFatFrumos\Desktop\AN$ 3\Laboratoare\PI\Proiect1\PlateDetection.cpp || cmake_object_order_depends_target_Proiect1
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MD /O2 /Ob2 /DNDEBUG -std:c++17
-  INCLUDES = -external:IC:\Users\IanisFatFrumos\Downloads\opencv\build\include -external:W0
+  INCLUDES = -IC:\Users\IanisFatFrumos\Downloads\opencv\build\include
+  OBJECT_DIR = CMakeFiles\Proiect1.dir
+  OBJECT_FILE_DIR = CMakeFiles\Proiect1.dir
+  TARGET_COMPILE_PDB = CMakeFiles\Proiect1.dir\
+  TARGET_PDB = Proiect1.pdb
+
+build CMakeFiles\Proiect1.dir\BatchTest.cpp.obj: CXX_COMPILER__Proiect1_unscanned_Release C$:\Users\IanisFatFrumos\Desktop\AN$ 3\Laboratoare\PI\Proiect1\BatchTest.cpp || cmake_object_order_depends_target_Proiect1
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MD /O2 /Ob2 /DNDEBUG -std:c++17
+  INCLUDES = -IC:\Users\IanisFatFrumos\Downloads\opencv\build\include
   OBJECT_DIR = CMakeFiles\Proiect1.dir
   OBJECT_FILE_DIR = CMakeFiles\Proiect1.dir
   TARGET_COMPILE_PDB = CMakeFiles\Proiect1.dir\
@@ -73,10 +81,11 @@ build CMakeFiles\Proiect1.dir\PlateDetection.cpp.obj: CXX_COMPILER__Proiect1_uns
 #############################################
 # Link the executable Proiect1.exe
 
-build Proiect1.exe: CXX_EXECUTABLE_LINKER__Proiect1_Release CMakeFiles\Proiect1.dir\main.cpp.obj CMakeFiles\Proiect1.dir\PlateDetection.cpp.obj | C$:\Users\IanisFatFrumos\Downloads\opencv\build\x64\vc16\lib\opencv_world4110.lib C$:\Users\IanisFatFrumos\Downloads\opencv\build\x64\vc16\lib\opencv_world4110.lib C$:\Users\IanisFatFrumos\Downloads\opencv\build\x64\vc16\lib\opencv_world4110.lib C$:\Users\IanisFatFrumos\Downloads\opencv\build\x64\vc16\lib\opencv_world4110.lib C$:\Users\IanisFatFrumos\Downloads\opencv\build\x64\vc16\lib\opencv_world4110.lib C$:\Users\IanisFatFrumos\Downloads\opencv\build\x64\vc16\lib\opencv_world4110.lib C$:\Users\IanisFatFrumos\Downloads\opencv\build\x64\vc16\lib\opencv_world4110.lib C$:\Users\IanisFatFrumos\Downloads\opencv\build\x64\vc16\lib\opencv_world4110.lib C$:\Users\IanisFatFrumos\Downloads\opencv\build\x64\vc16\lib\opencv_world4110.lib C$:\Users\IanisFatFrumos\Downloads\opencv\build\x64\vc16\lib\opencv_world4110.lib C$:\Users\IanisFatFrumos\Downloads\opencv\build\x64\vc16\lib\opencv_world4110.lib C$:\Users\IanisFatFrumos\Downloads\opencv\build\x64\vc16\lib\opencv_world4110.lib C$:\Users\IanisFatFrumos\Downloads\opencv\build\x64\vc16\lib\opencv_world4110.lib C$:\Users\IanisFatFrumos\Downloads\opencv\build\x64\vc16\lib\opencv_world4110.lib C$:\Users\IanisFatFrumos\Downloads\opencv\build\x64\vc16\lib\opencv_world4110.lib C$:\Users\IanisFatFrumos\Downloads\opencv\build\x64\vc16\lib\opencv_world4110.lib
+build Proiect1.exe: CXX_EXECUTABLE_LINKER__Proiect1_Release CMakeFiles\Proiect1.dir\main.cpp.obj CMakeFiles\Proiect1.dir\PlateDetection.cpp.obj CMakeFiles\Proiect1.dir\BatchTest.cpp.obj
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MD /O2 /Ob2 /DNDEBUG
   LINK_FLAGS = /machine:x64 /INCREMENTAL:NO /subsystem:console
-  LINK_LIBRARIES = C:\Users\IanisFatFrumos\Downloads\opencv\build\x64\vc16\lib\opencv_world4110.lib  C:\Users\IanisFatFrumos\Downloads\opencv\build\x64\vc16\lib\opencv_world4110.lib  C:\Users\IanisFatFrumos\Downloads\opencv\build\x64\vc16\lib\opencv_world4110.lib  C:\Users\IanisFatFrumos\Downloads\opencv\build\x64\vc16\lib\opencv_world4110.lib  C:\Users\IanisFatFrumos\Downloads\opencv\build\x64\vc16\lib\opencv_world4110.lib  C:\Users\IanisFatFrumos\Downloads\opencv\build\x64\vc16\lib\opencv_world4110.lib  C:\Users\IanisFatFrumos\Downloads\opencv\build\x64\vc16\lib\opencv_world4110.lib  C:\Users\IanisFatFrumos\Downloads\opencv\build\x64\vc16\lib\opencv_world4110.lib  C:\Users\IanisFatFrumos\Downloads\opencv\build\x64\vc16\lib\opencv_world4110.lib  C:\Users\IanisFatFrumos\Downloads\opencv\build\x64\vc16\lib\opencv_world4110.lib  C:\Users\IanisFatFrumos\Downloads\opencv\build\x64\vc16\lib\opencv_world4110.lib  C:\Users\IanisFatFrumos\Downloads\opencv\build\x64\vc16\lib\opencv_world4110.lib  C:\Users\IanisFatFrumos\Downloads\opencv\build\x64\vc16\lib\opencv_world4110.lib  C:\Users\IanisFatFrumos\Downloads\opencv\build\x64\vc16\lib\opencv_world4110.lib  C:\Users\IanisFatFrumos\Downloads\opencv\build\x64\vc16\lib\opencv_world4110.lib  C:\Users\IanisFatFrumos\Downloads\opencv\build\x64\vc16\lib\opencv_world4110.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
+  LINK_LIBRARIES = opencv_world4110.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
+  LINK_PATH = -LIBPATH:C:\Users\IanisFatFrumos\Downloads\opencv\build\x64\vc16\lib
   OBJECT_DIR = CMakeFiles\Proiect1.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
@@ -84,6 +93,52 @@ build Proiect1.exe: CXX_EXECUTABLE_LINKER__Proiect1_Release CMakeFiles\Proiect1.
   TARGET_FILE = Proiect1.exe
   TARGET_IMPLIB = Proiect1.lib
   TARGET_PDB = Proiect1.pdb
+
+# =============================================================================
+# Object build statements for EXECUTABLE target BatchTest
+
+
+#############################################
+# Order-only phony target for BatchTest
+
+build cmake_object_order_depends_target_BatchTest: phony || .
+
+build CMakeFiles\BatchTest.dir\BatchTest.cpp.obj: CXX_COMPILER__BatchTest_unscanned_Release C$:\Users\IanisFatFrumos\Desktop\AN$ 3\Laboratoare\PI\Proiect1\BatchTest.cpp || cmake_object_order_depends_target_BatchTest
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MD /O2 /Ob2 /DNDEBUG -std:c++17
+  INCLUDES = -external:IC:\Users\IanisFatFrumos\Downloads\opencv\build\include -external:W0
+  OBJECT_DIR = CMakeFiles\BatchTest.dir
+  OBJECT_FILE_DIR = CMakeFiles\BatchTest.dir
+  TARGET_COMPILE_PDB = CMakeFiles\BatchTest.dir\
+  TARGET_PDB = BatchTest.pdb
+
+build CMakeFiles\BatchTest.dir\PlateDetection.cpp.obj: CXX_COMPILER__BatchTest_unscanned_Release C$:\Users\IanisFatFrumos\Desktop\AN$ 3\Laboratoare\PI\Proiect1\PlateDetection.cpp || cmake_object_order_depends_target_BatchTest
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MD /O2 /Ob2 /DNDEBUG -std:c++17
+  INCLUDES = -external:IC:\Users\IanisFatFrumos\Downloads\opencv\build\include -external:W0
+  OBJECT_DIR = CMakeFiles\BatchTest.dir
+  OBJECT_FILE_DIR = CMakeFiles\BatchTest.dir
+  TARGET_COMPILE_PDB = CMakeFiles\BatchTest.dir\
+  TARGET_PDB = BatchTest.pdb
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target BatchTest
+
+
+#############################################
+# Link the executable BatchTest.exe
+
+build BatchTest.exe: CXX_EXECUTABLE_LINKER__BatchTest_Release CMakeFiles\BatchTest.dir\BatchTest.cpp.obj CMakeFiles\BatchTest.dir\PlateDetection.cpp.obj | C$:\Users\IanisFatFrumos\Downloads\opencv\build\x64\vc16\lib\opencv_world4110.lib C$:\Users\IanisFatFrumos\Downloads\opencv\build\x64\vc16\lib\opencv_world4110.lib C$:\Users\IanisFatFrumos\Downloads\opencv\build\x64\vc16\lib\opencv_world4110.lib C$:\Users\IanisFatFrumos\Downloads\opencv\build\x64\vc16\lib\opencv_world4110.lib C$:\Users\IanisFatFrumos\Downloads\opencv\build\x64\vc16\lib\opencv_world4110.lib C$:\Users\IanisFatFrumos\Downloads\opencv\build\x64\vc16\lib\opencv_world4110.lib C$:\Users\IanisFatFrumos\Downloads\opencv\build\x64\vc16\lib\opencv_world4110.lib C$:\Users\IanisFatFrumos\Downloads\opencv\build\x64\vc16\lib\opencv_world4110.lib C$:\Users\IanisFatFrumos\Downloads\opencv\build\x64\vc16\lib\opencv_world4110.lib C$:\Users\IanisFatFrumos\Downloads\opencv\build\x64\vc16\lib\opencv_world4110.lib C$:\Users\IanisFatFrumos\Downloads\opencv\build\x64\vc16\lib\opencv_world4110.lib C$:\Users\IanisFatFrumos\Downloads\opencv\build\x64\vc16\lib\opencv_world4110.lib C$:\Users\IanisFatFrumos\Downloads\opencv\build\x64\vc16\lib\opencv_world4110.lib C$:\Users\IanisFatFrumos\Downloads\opencv\build\x64\vc16\lib\opencv_world4110.lib C$:\Users\IanisFatFrumos\Downloads\opencv\build\x64\vc16\lib\opencv_world4110.lib C$:\Users\IanisFatFrumos\Downloads\opencv\build\x64\vc16\lib\opencv_world4110.lib
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MD /O2 /Ob2 /DNDEBUG
+  LINK_FLAGS = /machine:x64 /INCREMENTAL:NO /subsystem:console
+  LINK_LIBRARIES = C:\Users\IanisFatFrumos\Downloads\opencv\build\x64\vc16\lib\opencv_world4110.lib  C:\Users\IanisFatFrumos\Downloads\opencv\build\x64\vc16\lib\opencv_world4110.lib  C:\Users\IanisFatFrumos\Downloads\opencv\build\x64\vc16\lib\opencv_world4110.lib  C:\Users\IanisFatFrumos\Downloads\opencv\build\x64\vc16\lib\opencv_world4110.lib  C:\Users\IanisFatFrumos\Downloads\opencv\build\x64\vc16\lib\opencv_world4110.lib  C:\Users\IanisFatFrumos\Downloads\opencv\build\x64\vc16\lib\opencv_world4110.lib  C:\Users\IanisFatFrumos\Downloads\opencv\build\x64\vc16\lib\opencv_world4110.lib  C:\Users\IanisFatFrumos\Downloads\opencv\build\x64\vc16\lib\opencv_world4110.lib  C:\Users\IanisFatFrumos\Downloads\opencv\build\x64\vc16\lib\opencv_world4110.lib  C:\Users\IanisFatFrumos\Downloads\opencv\build\x64\vc16\lib\opencv_world4110.lib  C:\Users\IanisFatFrumos\Downloads\opencv\build\x64\vc16\lib\opencv_world4110.lib  C:\Users\IanisFatFrumos\Downloads\opencv\build\x64\vc16\lib\opencv_world4110.lib  C:\Users\IanisFatFrumos\Downloads\opencv\build\x64\vc16\lib\opencv_world4110.lib  C:\Users\IanisFatFrumos\Downloads\opencv\build\x64\vc16\lib\opencv_world4110.lib  C:\Users\IanisFatFrumos\Downloads\opencv\build\x64\vc16\lib\opencv_world4110.lib  C:\Users\IanisFatFrumos\Downloads\opencv\build\x64\vc16\lib\opencv_world4110.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
+  LINK_PATH = -LIBPATH:C:\Users\IanisFatFrumos\Downloads\opencv\build\x64\vc16\lib
+  OBJECT_DIR = CMakeFiles\BatchTest.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_COMPILE_PDB = CMakeFiles\BatchTest.dir\
+  TARGET_FILE = BatchTest.exe
+  TARGET_IMPLIB = BatchTest.lib
+  TARGET_PDB = BatchTest.pdb
 
 
 #############################################
@@ -111,6 +166,8 @@ build rebuild_cache: phony CMakeFiles\rebuild_cache.util
 # =============================================================================
 # Target aliases.
 
+build BatchTest: phony BatchTest.exe
+
 build Proiect1: phony Proiect1.exe
 
 # =============================================================================
@@ -121,7 +178,7 @@ build Proiect1: phony Proiect1.exe
 #############################################
 # Folder: C:/Users/IanisFatFrumos/Desktop/AN 3/Laboratoare/PI/Proiect1/cmake-build-release
 
-build all: phony Proiect1.exe
+build all: phony Proiect1.exe BatchTest.exe
 
 # =============================================================================
 # Built-in targets

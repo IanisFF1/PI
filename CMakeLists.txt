@@ -4,6 +4,7 @@ project(Proiect1)
 set(CMAKE_CXX_STANDARD 17)
 
 
+
 set(OpenCV_DIR "C:/Users/IanisFatFrumos/Downloads/opencv/build")
 find_package(OpenCV REQUIRED)
 include_directories(${OpenCV_INCLUDE_DIRS})
@@ -20,6 +21,8 @@ add_executable(Proiect1
 )
 
 target_link_libraries(Proiect1 ${OpenCV_LIBRARIES})
+
+
 
 
 set_target_properties(Proiect1 PROPERTIES
